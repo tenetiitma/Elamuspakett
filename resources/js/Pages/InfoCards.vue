@@ -3,7 +3,7 @@ import InfoCard from "@/components/InfoCard.vue";
 
 export default {
   props: {
-    data: Object, // Expect an object
+    data: Object,
   },
   components: {
     InfoCard,
