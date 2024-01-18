@@ -1,0 +1,96 @@
+<script setup>
+import GuestLayout from "@/Layouts/GuestLayout.vue";
+import { Head, Link } from "@inertiajs/vue3";
+import InputLabel from "@/Components/InputLabel.vue";
+import { ref } from "vue";
+
+const productPrice = ref(50);
+</script>
+
+<template>
+  <Head title="Dashboard" />
+
+  <GuestLayout>
+    <template #header>
+      <h2
+        class="text-5xl font-medium leading-tight text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF9000] to-[#FFBA00]"
+      >
+        ELAMUSTEENUSED
+      </h2>
+    </template>
+
+    <div class="py-12">
+      <div class="max-w-screen mx-auto sm:px-6 lg:px-8">
+        <div class="overflow-hidden sm:rounded-lg">
+          <div class="p-6 text-gray-900 grid grid-cols-12 gap-24">
+            <div class="col-span-3 grid gap-6">
+              <div
+                class="bg-[#ffffff93] rounded-md grid px-6 pt-4 pb-6 border-[1px] border-[#c7c7c769] shadow-md"
+              >
+                <InputLabel class="mb-2" for="asukoht"
+                  >Otsi märksõna järgi</InputLabel
+                >
+                <input
+                  type="text"
+                  class="text-sm rounded-md bg-[#ffffffa2] border-[1px] border-gray-300"
+                />
+              </div>
+              <div
+                class="bg-[#ffffff93] rounded-md grid px-6 pt-4 pb-6 border-[1px] border-[#c7c7c769] shadow-md"
+              >
+                <InputLabel class="mb-1" for="asukoht">Asukoht</InputLabel>
+                <select
+                  name="asukoht"
+                  id=""
+                  class="text-sm rounded-md bg-[#ffffffa2] border-[1px] border-gray-300"
+                >
+                  <option selected="true" disabled="disabled" class="text-xs"
+                    >Vali koht</option
+                  >
+                  <option value="">Harjumaa</option>
+                  <option value="">Saaremaa</option>
+                  <option value="">Tartumaa</option>
+                  <option value="">Pärnumaa</option>
+                </select>
+              </div>
+              <div
+                class="bg-[#ffffff93] rounded-md grid px-6 pt-4 pb-6 border-[1px] border-[#c7c7c769] shadow-md mb-4"
+              >
+                <InputLabel>Hind</InputLabel>
+                <p class="text-center">0€ - {{ productPrice }}€</p>
+                <input
+                  type="range"
+                  min="0"
+                  max="500"
+                  step="1"
+                  v-model="productPrice"
+                />
+              </div>
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="'/matk'"
+                >MATK</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="'/matk'"
+                >MATK</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="'/matk'"
+                >MATK</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="'/matk'"
+                >MATK</Link
+              >
+            </div>
+            <div class="border-2 border-green-700 col-start-4 col-span-9"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </GuestLayout>
+</template>

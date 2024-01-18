@@ -1,0 +1,60 @@
+{
+  "info_cards": [
+    {
+      "activity": "Outdoor Adventure Tour",
+      "rating": 4.5,
+      "location": "Mountain Peak Expeditions",
+      "full_price": 150.00,
+      "discounted_price": 120.00
+    },
+    {
+      "activity": "Cooking Class: Italian Cuisine",
+      "rating": 5.0,
+      "location": "Taste of Italy Culinary School",
+      "full_price": 80.00,
+      "discounted_price": 60.00
+    },
+    {
+      "activity": "City Bike Tour",
+      "rating": 4.8,
+      "location": "Urban Explorer Tours",
+      "full_price": 40.00,
+      "discounted_price": 30.00
+    },
+    {
+      "activity": "Art Workshop: Abstract Painting",
+      "rating": 4.2,
+      "location": "Creative Expressions Studio",
+      "full_price": 60.00,
+      "discounted_price": 50.00
+    },
+    {
+      "activity": "Scuba Diving Experience",
+      "rating": 5.0,
+      "location": "Deep Blue Adventures",
+      "full_price": 200.00,
+      "discounted_price": 180.00
+    },
+    {
+      "activity": "Hiking Trail Exploration",
+      "rating": 4.7,
+      "location": "Nature Trails National Park",
+      "full_price": 30.00,
+      "discounted_price": 25.00
+    },
+    {
+      "activity": "Photography Workshop: Night Sky",
+      "rating": 4.9,
+      "location": "Shutterbug Academy",
+      "full_price": 70.00,
+      "discounted_price": 55.00
+    },
+    {
+      "activity": "Wine Tasting Tour",
+      "rating": 4.6,
+      "location": "Vineyard Elegance Estates",
+      "full_price": 90.00,
+      "discounted_price": 75.00
+    }
+  ]
+}
