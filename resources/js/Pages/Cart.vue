@@ -4,14 +4,14 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 </script>
 
 <template>
-  <Head title="Company" />
+  <Head title="Cart" />
 
   <GuestLayout>
     <template #header>
       <p
         class="text-5xl font-medium leading-tight text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF9000] to-[#FFBA00]"
       >
-        REGISTREERI FIRMA
+        OSTUKORV
       </p>
     </template>
   </GuestLayout>

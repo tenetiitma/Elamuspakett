@@ -39,7 +39,9 @@ const showingNavigationDropdown = ref(false);
         v-if="$slots.header"
       >
         <div class="flex w-screen mx-8">
-          <div class="shrink-0 flex items-center mr-20">
+          <div
+            class="shrink-0 flex items-center mr-20 hover:scale-[1.1] ease-in-out duration-300"
+          >
             <Link :href="route('dashboard')">
               <div>
                 <img src="../../images/kanuu.svg" alt="kanuu" />
@@ -60,10 +62,10 @@ const showingNavigationDropdown = ref(false);
           </button>
 
           <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
-            <button>
-              <div class="flex">
+            <button class="hover:scale-[1.1] ease-in-out duration-300">
+              <Link :href="route('cart')">
                 <ShoppingCartIcon class="w-10 h-10 text-[#FF9601]" />
-              </div>
+              </Link>
             </button>
           </div>
         </div>

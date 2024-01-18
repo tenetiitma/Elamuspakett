@@ -34,6 +34,10 @@ Route::get('/matk', function () {
     return Inertia::render('Matk');
 })->name('matk');
 
+Route::get('/cart', function () {
+    return Inertia::render('Cart');
+})->name('cart');
+
 Route::get('/company', function () {
     return Inertia::render('RegisterCompany');
 })->name('company');
