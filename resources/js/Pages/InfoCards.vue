@@ -1,5 +1,5 @@
 <script>
-import InfoCard from "@/components/InfoCard.vue";
+import InfoCard from "@/Components/InfoCard.vue";
 
 export default {
   props: {
