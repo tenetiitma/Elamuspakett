@@ -12,11 +12,11 @@ const productPrice = ref(50);
 
   <GuestLayout>
     <template #header>
-      <h2
+      <p
         class="text-5xl font-medium leading-tight text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF9000] to-[#FFBA00]"
       >
         ELAMUSTEENUSED
-      </h2>
+      </p>
     </template>
 
     <div class="py-12">
@@ -73,17 +73,17 @@ const productPrice = ref(50);
               >
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="'/matk'"
+                :href="route('matk')"
                 >MATK</Link
               >
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="'/matk'"
+                :href="route('matk')"
                 >MATK</Link
               >
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="'/matk'"
+                :href="route('matk')"
                 >MATK</Link
               >
             </div>

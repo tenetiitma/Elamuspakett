@@ -51,11 +51,12 @@ const showingNavigationDropdown = ref(false);
           </div>
 
           <button class="hover:scale-[1.1] ease-in-out duration-300">
-            <div
+            <Link
+              :href="route('company')"
               class="flex shadow-md rounded-full px-6 bg-gradient-to-r from-[#FF9000] to-[#FFBA00] p-3 text-yellow-50 text-xl font-bold hover:bg-orange-600"
             >
               FIRMALE
-            </div>
+            </Link>
           </button>
 
           <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">

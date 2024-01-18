@@ -34,6 +34,10 @@ Route::get('/matk', function () {
     return Inertia::render('Matk');
 })->name('matk');
 
+Route::get('/company', function () {
+    return Inertia::render('RegisterCompany');
+})->name('company');
+
 Route::get('/info-cards', [InfoCardController::class, 'index']);
 
 Route::get('/admin', function () {
