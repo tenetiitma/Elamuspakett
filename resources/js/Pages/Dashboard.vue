@@ -93,9 +93,11 @@ const productPrice = ref(50);
               >
             </div>
             <div class="border-2 border-green-700 col-start-4 col-span-9">
+              <div class="grid grid-cols-4 gap-8">
               <template v-for="(packet, index) in data.info_cards" :key="index">
                 <InfoCard :item="packet" />
               </template> 
+            </div>
             </div>
           </div>
         </div>
