@@ -11,8 +11,10 @@ class InfoCardController extends Controller
     {
         $data = json_decode(file_get_contents(resource_path('data.json')), true);
 
-        return Inertia::render('InfoCards', [
-            'data' => ['info_cards' => $data],
+        dd($data);
+
+        return Inertia::render('Dashboard', [
+            'data' => $data,
         ]);
 
     }

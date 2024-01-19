@@ -2,7 +2,12 @@
 import GuestLayout from "@/Layouts/GuestLayout.vue";
 import { Head, Link } from "@inertiajs/vue3";
 import InputLabel from "@/Components/InputLabel.vue";
+import InfoCard from "@/Components/InfoCard.vue";
 import { ref } from "vue";
+
+defineProps({
+  data: Object
+});
 
 const productPrice = ref(50);
 </script>
@@ -87,7 +92,11 @@ const productPrice = ref(50);
                 >MATK</Link
               >
             </div>
-            <div class="border-2 border-green-700 col-start-4 col-span-9"></div>
+            <div class="border-2 border-green-700 col-start-4 col-span-9">
+              <template v-for="(packet, index) in data.info_cards" :key="index">
+                <InfoCard :item="packet" />
+              </template> 
+            </div>
           </div>
         </div>
       </div>
