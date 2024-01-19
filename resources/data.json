@@ -1,6 +1,7 @@
 {
   "info_cards": [
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/095035/16809.jpg?w=454&h=421&fit=crop",
       "activity": "Outdoor Adventure Tour",
       "rating": 4.5,
       "location": "Mountain Peak Expeditions",
@@ -8,13 +9,15 @@
       "discounted_price": 120.00
     },
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/085827/21804.jpg?w=454&h=421&fit=crop",
       "activity": "Cooking Class: Italian Cuisine",
       "rating": 5.0,
       "location": "Taste of Italy Culinary School",
       "full_price": 80.00,
-      "discounted_price": 60.00
+      "discounted_price": null 
     },
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/103129/17195.jpg?w=454&h=421&fit=crop",
       "activity": "City Bike Tour",
       "rating": 4.8,
       "location": "Urban Explorer Tours",
@@ -22,6 +25,7 @@
       "discounted_price": 30.00
     },
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/097886/15023.jpg?w=454&h=421&fit=crop",
       "activity": "Art Workshop: Abstract Painting",
       "rating": 4.2,
       "location": "Creative Expressions Studio",
@@ -29,6 +33,7 @@
       "discounted_price": 50.00
     },
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/095322/21564.jpg?w=454&h=421&fit=crop",
       "activity": "Scuba Diving Experience",
       "rating": 5.0,
       "location": "Deep Blue Adventures",
@@ -36,6 +41,7 @@
       "discounted_price": 180.00
     },
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/116250/26258.jpg?w=454&h=421&fit=crop",
       "activity": "Hiking Trail Exploration",
       "rating": 4.7,
       "location": "Nature Trails National Park",
@@ -43,6 +49,7 @@
       "discounted_price": 25.00
     },
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/111223/20726.jpg?w=454&h=421&fit=crop",
       "activity": "Photography Workshop: Night Sky",
       "rating": 4.9,
       "location": "Shutterbug Academy",
@@ -50,6 +57,7 @@
       "discounted_price": 55.00
     },
     {
+      "img": "https://cdn.kingitus.ee/storage/photos/products/090925/8831.jpg?w=454&h=421&fit=crop",
       "activity": "Wine Tasting Tour",
       "rating": 4.6,
       "location": "Vineyard Elegance Estates",
