@@ -8,11 +8,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 
   <GuestLayout>
     <template #header>
-      <p
-        class="text-5xl font-medium leading-tight text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF9000] to-[#FFBA00]">
-        LOGI SISSE/REGISTREERI FIRMA
-      </p>
+      <div class="text-5xl font-medium leading-tight text-center">
+        REGISTREERI FIRMA
+      </div>
     </template>
-    
   </GuestLayout>
 </template>

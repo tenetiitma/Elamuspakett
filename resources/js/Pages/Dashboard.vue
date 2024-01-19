@@ -6,7 +6,7 @@ import InfoCard from "@/Components/InfoCard.vue";
 import { ref } from "vue";
 
 defineProps({
-  data: Object
+  data: Object,
 });
 
 const productPrice = ref(50);
@@ -17,9 +17,7 @@ const productPrice = ref(50);
 
   <GuestLayout>
     <template #header>
-      <p
-        class="text-5xl font-medium leading-tight text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF9000] to-[#FFBA00]"
-      >
+      <p class="text-5xl font-medium leading-tight text-center">
         ELAMUSTEENUSED
       </p>
     </template>
@@ -92,17 +90,17 @@ const productPrice = ref(50);
                 >RANNAPUHKUS</Link
               >
               <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                class="bg-gradient-to-r from-[#43B692] to-[#8fe4c5] rounded-lg text-center py-1 shadow-sm text-white font-black"
                 :href="route('matk')"
                 >RETRIIT LAAGER</Link
               >
               <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                class="bg-gradient-to-r from-[#43B692] to-[#8fe4c5] rounded-lg text-center py-1 shadow-sm text-white font-black"
                 :href="route('matk')"
                 >KULTUURIPUHKUS</Link
               >
               <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                class="bg-gradient-to-r from-[#62c3a4] to-[#8fe4c5] rounded-lg text-center py-1 shadow-sm text-white font-black"
                 :href="route('matk')"
                 >SEIKLUSRAJAD</Link
               >
@@ -134,10 +132,13 @@ const productPrice = ref(50);
             </div>
             <div class="col-start-4 col-span-9">
               <div class="grid grid-cols-4 gap-8">
-              <template v-for="(packet, index) in data.info_cards" :key="index">
-                <InfoCard :item="packet" />
-              </template> 
-            </div>
+                <template
+                  v-for="(packet, index) in data.info_cards"
+                  :key="index"
+                >
+                  <InfoCard :item="packet" />
+                </template>
+              </div>
             </div>
           </div>
         </div>
