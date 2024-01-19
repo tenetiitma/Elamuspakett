@@ -63,8 +63,6 @@ const productPrice = ref(50);
                   <option value="">Salme</option>
                   <option value="">Torgu</option>
                   <option value="">Valjala</option>
-                  
-
                 </select>
               </div>
               <div
@@ -82,8 +80,9 @@ const productPrice = ref(50);
               </div>
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="'/packet'"
-                >MATK</Link>
+                :href="route('matk')"
+                >MATK</Link
+              >
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
                 :href="route('matk')"
