@@ -9,7 +9,7 @@ const showingNavigationDropdown = ref(false);
 
 <template>
   <div>
-    <div class="min-h-screen bg-[#FFF7DF]">
+    <div class="min-h-screen bg-[#fff8e9]">
       <nav class="bg-white border-gray-100">
         <!-- Responsive Navigation Menu -->
         <div
@@ -35,7 +35,7 @@ const showingNavigationDropdown = ref(false);
 
       <!-- Page Heading -->
       <header
-        class="bg-gradient-to-br from-[#ffd296] to-[#fff1cc] shadow-lg flex"
+        class="bg-gradient-to-t from-[#fff3e3] via-[#fffdf9] to-[#fffdf9] shadow-lg flex"
         v-if="$slots.header"
       >
         <div class="flex w-screen mx-8">
