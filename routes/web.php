@@ -41,6 +41,10 @@ Route::get('/company', function () {
     return Inertia::render('RegisterCompany');
 })->name('company');
 
+Route::get('/packet', function () {
+    return Inertia::render('Packet');
+})->name('packet');
+
 Route::get('/info-cards', [InfoCardController::class, 'index']);
 
 Route::get('/admin', function () {

@@ -52,10 +52,21 @@ const productPrice = ref(50);
                   <option selected="true" disabled="disabled" class="text-xs"
                     >Vali koht</option
                   >
-                  <option value="">Harjumaa</option>
                   <option value="">Saaremaa</option>
-                  <option value="">Tartumaa</option>
-                  <option value="">Pärnumaa</option>
+                  <option value="">Muhumaa</option>
+                  <option value="">Kuressaare linn</option>
+                  <option value="">Kihelkonna</option>
+                  <option value="">Laimjala</option>
+                  <option value="">Lääne-Saare</option>
+                  <option value="">Mustjala</option>
+                  <option value="">Orissaare</option>
+                  <option value="">Pihtla</option>
+                  <option value="">Pöide</option>
+                  <option value="">Salme</option>
+                  <option value="">Torgu</option>
+                  <option value="">Valjala</option>
+                  
+
                 </select>
               </div>
               <div
@@ -79,17 +90,47 @@ const productPrice = ref(50);
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
                 :href="route('matk')"
-                >MATK</Link
+                >RANNAPUHKUS</Link
               >
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
                 :href="route('matk')"
-                >MATK</Link
+                >RETRIIT LAAGER</Link
               >
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
                 :href="route('matk')"
-                >MATK</Link
+                >KULTUURIPUHKUS</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="route('matk')"
+                >SEIKLUSRAJAD</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="route('matk')"
+                >HOBUTEGEVUS</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="route('matk')"
+                >SPORTMÄNGUD</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="route('matk')"
+                >RATTARENT</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="route('matk')"
+                >PEREPUHKUS</Link
+              >
+              <Link
+                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
+                :href="route('matk')"
+                >EVENTS</Link
               >
             </div>
             <div class="border-2 border-green-700 col-start-4 col-span-9">
