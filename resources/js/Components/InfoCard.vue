@@ -1,5 +1,6 @@
 <script setup>
 import { StarIcon } from "@heroicons/vue/24/solid";
+import { Link } from "@inertiajs/vue3";
 
 defineProps({
   item: Object,
@@ -7,7 +8,8 @@ defineProps({
 </script>
 
 <template>
-  <div
+  <Link
+    :href="route('packet')"
     class="pb-4 bg-white border-[1px] shadow-md hover:scale-[1.1] ease-in-out duration-300 p-1"
   >
     <img :src="item.img" />
@@ -34,5 +36,5 @@ defineProps({
         </p>
       </div>
     </div>
-  </div>
+  </Link>
 </template>
