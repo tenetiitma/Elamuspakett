@@ -84,9 +84,8 @@ const productPrice = ref(50);
               </div>
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="'/matk'"
-                >MATK</Link
-              >
+                :href="'/packet'"
+                >MATK</Link>
               <Link
                 class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
                 :href="route('matk')"
