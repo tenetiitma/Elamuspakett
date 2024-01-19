@@ -1,66 +1,127 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# VEEBIPLATVORM ELAMUSTEENUSTE PAKKUMISEKS SAAREMAA- JA MUHUMAAL
+Kuressaare Ametikooli tarkvaraprojekt.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## KIRJELDUS
+* EESMÄRK: Saaremaa elamusteenuste pakettide pakkumine kliendile.
+* MILLEKS?: Kliendi elu kergemaks muutmiseks. Pikendada Saaremaa hooajalisust. 
+* KELLELE?: Turist, pere. 
+* Üldine nägemus tarkvarast: Koduleht, kust klient saab valida omale puhkuse perioodiks sobiva paketi. 
 
-## About Laravel
+### OSALEJAD
+* Aren, Aliin, Kaspar, Tene (TA-22)
+* Ave, Gretelis, Liisa, Merle (Ä-23)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## FIGMA
+https://www.figma.com/file/am5qMEclyqA27qcDolzW0I/Elamusteenused?type=design&node-id=1%3A2&mode=design&t=tWHFjWPQEgrYCUrP-1
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## PILDIMATERJALI
+*AVALEHT
+![avaleht](https://github.com/tenetiitma/Elamuspakett/assets/113007378/6badab9e-fd98-4c53-aa78-c7b826c560c7)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+*TOOTELEHT
+![toote_leht](https://github.com/tenetiitma/Elamuspakett/assets/113007378/9c373753-4c08-43d6-9e96-c1b16d340ac6)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+*ANDMEBAASI ALUSTAMINE
+![datastructure](https://github.com/tenetiitma/Elamuspakett/assets/113007378/d68dbead-8514-438e-8e90-9fda20a33783)
 
-## Laravel Sponsors
+*FUNKTSIOONID
+![klient-user](https://github.com/tenetiitma/Elamuspakett/assets/113007378/1668ef27-2dc7-477f-bd98-5c1bc7552c8b)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+*ÜKSIKU TOOTE VAADE
+![toote_leht](https://github.com/tenetiitma/Elamuspakett/assets/113007378/99b28fd8-ad80-456c-a240-979e43e2ff6c)
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+************************************************************************************************
+## Prerequisites
+- Composer version ^2.*
+- Laravel: https://laravel.com/docs/10.x/deployment#server-requirements
+- Node:  ^17.*
+## Initial setup
+- `git clone`
+- `composer install`
+- `npm install`
+- `cp .env.example .env`
+- Adjust `.env` DB_ variables
+- `php artisan migrate`
+## DB connection
+### Local database connection (WSL)
+- make sure that the SQL server is running `sudo service mysql status`
+- if the SQL service is not running `sudo service mysql start`
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 1. App setup, database migrations and basic artisan commands
 
-## Code of Conduct
+### Create Models, Controllers & Migrations based on `books.sql` schema using artisan command: 
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+> `php artisan make:model {replace with model name} -mcr`
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+For the pivot table book_authors only migration file is required.
 
-## License
+This can be done by using artisan command:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+> `php artisan make:migration {replace with table name}`
+
+### Add table columns to migration files based on the `books.sql` table structures.
+
+Find suitable type for each column by reading the [Creating columns](https://laravel.com/docs/10.x/migrations#creating-columns) documentation.
+
+Once all the columns have been defined, we can move forward and populate the database by using artisan command:
+
+> `php artisan migrate`
+This will populate the database based on the migration schema.
+However this command does not remove any existing tables.
+
+To drop all tables before migrating:
+
+> `php artisan migrate:fresh`
+### Fill the tables by importing `books.sql` in your database managment tool.
+
+
+### Refrences:
+- [Creating columns](https://laravel.com/docs/10.x/migrations#creating-columns)
+- [Generating migrations](https://laravel.com/docs/10.x/migrations#generating-migrations)
+- [Generating model classes](https://laravel.com/docs/10.x/eloquent#generating-model-classes)
+
+## 2. Model relationships
+### Based on the database structure create model relationships.
+
+Create model relationships for the followng scenarios:
+- [x] As a user i want to see books with authors.
+- [x] As a user i want to see authors books.
+- [ ] As a user i want to see client orders.
+- [ ] As a user i want to see book orders.
+- [ ] As a user i want to see what book was orderd.
+- [ ] As a user i want to see the client who made the order.
+
+Extra:
+- [ ] As a user i want to see clients books.
+
+### To test if the relationships work we can use Artisan console (REPL) or create a test route to visualize the results in the browser enviroment.
+
+Use the following command to initiate the console:
+> `php artisan tinker`
+To create our testing route we need to first add it to `web.php`
+
+```php
+Route::get('/test', function(){
+    // some expamles
+
+    // return Author::first()->books;
+    // return Author::with('books')->first();
+
+    // dd()
+});
+```
+
+### Refrences
+- [Eloquent: Relationships](https://laravel.com/docs/10.x/eloquent-relationships)
+- [dd()](https://laravel.com/docs/10.x/helpers#method-dd)
+
+***********************************************************************
+npm install @heroicons/vue
+
+
