@@ -78,56 +78,58 @@ const productPrice = ref(50);
                   v-model="productPrice"
                 />
               </div>
-              <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="route('matk')"
-                >MATK</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="route('matk')"
-                >RANNAPUHKUS</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#43B692] to-[#8fe4c5] rounded-lg text-center py-1 shadow-sm text-white font-black"
-                :href="route('matk')"
-                >RETRIIT LAAGER</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#43B692] to-[#8fe4c5] rounded-lg text-center py-1 shadow-sm text-white font-black"
-                :href="route('matk')"
-                >KULTUURIPUHKUS</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#62c3a4] to-[#8fe4c5] rounded-lg text-center py-1 shadow-sm text-white font-black"
-                :href="route('matk')"
-                >SEIKLUSRAJAD</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="route('matk')"
-                >HOBUTEGEVUS</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="route('matk')"
-                >SPORTMÄNGUD</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="route('matk')"
-                >RATTARENT</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="route('matk')"
-                >PEREPUHKUS</Link
-              >
-              <Link
-                class="bg-gradient-to-r from-[#ffae44] to-[#ffd45e] rounded-lg text-center py-1 border-[1px] border-[#ffbc64] shadow-sm font-medium"
-                :href="route('matk')"
-                >EVENTS</Link
-              >
+              <div class="grid gap-3">
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Matk</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Rannapuhkus</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Retriit Laager</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Kultuuripuhkus</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Seiklusrajad</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Hobutegevused</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Sportmängud</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Rattarent</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Perepuhkus</Link
+                >
+                <Link
+                  class="bg-white border-[1px] border-[#429e8176] rounded-lg text-center py-1 shadow-sm shadow-[#8fe4c5] text-black font-light hover:scale-[1.1] ease-in-out duration-300"
+                  :href="route('matk')"
+                  >Event</Link
+                >
+              </div>
             </div>
             <div class="col-start-4 col-span-9">
               <div class="grid grid-cols-4 gap-8">
